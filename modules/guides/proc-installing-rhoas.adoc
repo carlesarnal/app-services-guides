@@ -79,7 +79,7 @@ This example installs `rhoas` version `{rhoas-version}`:
 
 [source,shell,subs="+attributes"]
 ----
-$ sudo dnf install -y https://github.com/redhat-developer/app-services-cli/releases/download/{rhoas-version}/rhoas_{rhoas-version}_linux_amd64.rpm
+$ sudo dnf install -y https://github.com/redhat-developer/app-services-cli/releases/download/v{rhoas-version}/rhoas_{rhoas-version}_linux_amd64.rpm
 ----
 --
 
@@ -170,3 +170,17 @@ rhoas version {rhoas-version}
 .. In the *Variable* section, select *Path*, and click *Edit*.
 
 .. Click *New*, and enter `C:\rhoas`.
+
+.. Click *OK* to save changes.
+
+. Check the `rhoas` version to verify that the CLI is installed.
++
+--
+This example shows that `rhoas` {rhoas-version} is installed:
+
+[source,shell,subs="+attributes"]
+----
+$ rhoas --version
+rhoas version {rhoas-version}
+----
+--
